@@ -81,6 +81,14 @@ public:
     {
         return queueSize - deletedItemsCnt == 0;
     }
+
+    /**
+     * @brief Destroy the queue
+     */
+    ~Queue()
+    {
+        delete[] items;
+    }
 };
 
 #endif
