@@ -91,7 +91,7 @@ public:
      */
     ~Stack()
     {
-        delete[] items;
+        delete[] this->items;
     };
 };
 
